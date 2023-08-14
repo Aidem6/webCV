@@ -95,6 +95,10 @@
   margin-left: 10px;
 }
 
+.list li span {
+  margin-left: 10px;
+}
+
 .infoChunk {
   margin-top: 20px;
 }

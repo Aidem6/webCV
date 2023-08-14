@@ -21,53 +21,53 @@ export function SkillsCard() {
       <ul className={styles.list}>
         <li>
           <FontAwesomeIcon icon={faReact} />
-          <a>React.js</a>
+          <span>React.js</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faReact} />
-          <a>React Native</a>
+          <span>React Native</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faSquareJs} />
-          <a>Javascript</a>
+          <span>Javascript</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faGitAlt} />
-          <a>Git</a>
+          <span>Git</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faHtml5} />
-          <a>HTML/CSS</a>
+          <span>HTML/CSS</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faPython} />
-          <a>Python</a>
+          <span>Python</span>
         </li>
       </ul>
       <h3 className={styles.listH3}>Soft skills</h3>
       <ul className={styles.list}>
         <li>
           <FontAwesomeIcon icon={faCircle} size='2xs' />
-          <a>Good communication</a>
+          <span>Good communication</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faCircle} size='2xs' />
-          <a>Problem-Solving</a>
+          <span>Problem-Solving</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faCircle} size='2xs' />
-          <a>Adaptability</a>
+          <span>Adaptability</span>
         </li>
       </ul>
       <h3 className={styles.listH3}>Languages</h3>
       <ul className={styles.list}>
         <li>
           <FontAwesomeIcon icon={faCircle} size='2xs' />
-          <a>Polish - native</a>
+          <span>Polish - native</span>
         </li>
         <li>
           <FontAwesomeIcon icon={faCircle} size='2xs' />
-          <a>English B2/C1</a>
+          <span>English B2/C1</span>
         </li>
       </ul>
     </div>
