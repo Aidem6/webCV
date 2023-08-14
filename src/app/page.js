@@ -21,10 +21,10 @@ export default function Home() {
         <Col xs={12} md={8} className='d-flex flex-column'>
           <Row xs={12} className={styles.cardWrapper}>
             <div className={`${styles.card}`} style={{position: 'relative'}}>
-              <div className={styles.title}>Adam Tomczyk</div>
               <div className={styles.imageWrapper}>
                 <Image src={myFace} fill alt='my face' />
               </div>
+              <div className={styles.title}>Adam Tomczyk</div>
             </div>
           </Row>
           <Row xs={12} className={styles.cardWrapper}>
