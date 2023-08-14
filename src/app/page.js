@@ -48,7 +48,7 @@ export default function Home() {
           <Row xs={12} className={[styles.cardWrapper, 'flex-grow-1']}>
             <SkillsCard />
           </Row>
-          <Row xs={12} className={[styles.cardWrapper, 'flex-grow-1']}>
+          <Row xs={12} className={styles.cardWrapper}>
             <a href={'/Adam_Tomczyk_CV.pdf'} download={'Adam_Tomczyk_CV.pdf'} className='p-0'>
               <Button variant="primary" className={`${styles.card} ${styles.accentBacground}`}>
                 <h2 className={styles.secondaryTitle}>
