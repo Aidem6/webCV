@@ -1,0 +1,19 @@
+{
+    "short_name": "AT_CV",
+    "name": "Adam Tomczyk CV",
+    "icons": [
+      {
+        "src": "logo192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "logo512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "display": "standalone",
+    "start_url": "./",
+    "prefer_related_applications": false
+}
