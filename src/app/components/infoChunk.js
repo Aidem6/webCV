@@ -19,6 +19,7 @@ export function InfoChunk(props) {
         { props.logo &&
           <div className={'rounded overflow-hidden'} style={{minWidth: '64px'}}>
             <Image
+              alt={'app logo'}
               src={props.logo}
               width={64}
               height={64}

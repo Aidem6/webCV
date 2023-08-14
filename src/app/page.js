@@ -23,7 +23,7 @@ export default function Home() {
             <div className={`${styles.card}`} style={{position: 'relative'}}>
               <div className={styles.title}>Adam Tomczyk</div>
               <div className={styles.imageWrapper}>
-                <Image src={myFace} fill />
+                <Image src={myFace} fill alt='my face' />
               </div>
             </div>
           </Row>
