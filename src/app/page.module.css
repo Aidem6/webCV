@@ -3,8 +3,8 @@
 }
 
 .card {
-  background-color: #393E46;
-  color: #eeeeee;
+  background-color: rgb(34, 40, 49);
+  color: #dddddd;
   border-radius: 10px;
   padding: 10px;
   display: flex;

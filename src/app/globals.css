@@ -7,7 +7,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-color: 34, 40, 49;
+    --background-color: 0,0,0;
     --font-color: 255, 255, 255;
     --primary-color: #222831;
     --secondary-color: #393e46;
