@@ -13,10 +13,25 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import myFace from './assets/cvface.png';
 import Button from 'react-bootstrap/Button';
+import { ThemeChanger } from './components/themeChanger';
+import { useTheme } from 'next-themes'
 
 export default function Home() {
+  const { theme, setTheme } = useTheme()
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
+
   return (
     <Container className='w-100 mw-100'>
+      <Row>
+        <ThemeChanger />
+      </Row>
       <Row>
         <Col xs={12} md={8} className='d-flex flex-column'>
           <Row xs={12} className={styles.cardWrapper}>

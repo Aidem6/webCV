@@ -2,36 +2,31 @@
   --font-mono: 'Raleway', ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --background-color: #000;
+  --font-color: #ddd;
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --accent-background-color: #98BBF6;
+  --accent-font-color: #222831;
+  --bs-border-width: 3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-color: 0,0,0;
-    --font-color: 255, 255, 255;
-    --primary-color: #222831;
-    --secondary-color: #393e46;
-    --accent-color: #98BBF6;
-    --bs-border-width: 3px;
-  }
-
-  .btn-primary {
-    --bs-btn-bg: var(--accent-color);
-    --bs-btn-color: #222831;
-    --bs-btn-border-color: var(--accent-color);
-    --bs-btn-hover-color: #222831;
-    --bs-btn-hover-bg: var(--accent-color);
-    --bs-btn-hover-border-color: var(--accent-color);
-    --bs-btn-focus-shadow-rgb: 13,110,253;
-    --bs-btn-active-color: #222831;
-    --bs-btn-active-bg: var(--accent-color);
-    --bs-btn-active-border-color: var(--accent-color);
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: var(--accent-color);
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: var(--accent-color);
-    --bs-gradient: none;
-  }
+.btn-primary {
+  --bs-btn-bg: var(--accent-background-color);
+  --bs-btn-color: var(--accent-font-color);
+  --bs-btn-border-color: var(--accent-background-color);
+  --bs-btn-hover-color: var(--accent-font-color);
+  --bs-btn-hover-bg: var(--accent-background-color);
+  --bs-btn-hover-border-color: var(--accent-background-color);
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: var(--accent-font-color);
+  --bs-btn-active-bg: var(--accent-background-color);
+  --bs-btn-active-border-color: var(--accent-background-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--accent-background-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--accent-background-color);
+  --bs-gradient: none;
 }
 
 * {
@@ -45,9 +40,9 @@ body {
   overflow-x: hidden;
   max-width: 1100px;
   margin: 0 auto;
-  color: rgb(var(--foreground-rgb));
+  color: var(--font-color);
   font-family: Raleway;
-  background: rgb(var(--background-color));
+  background: var(--background-color);
 }
 
 body {
@@ -59,8 +54,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+[data-theme='light'] {
+  --font-color: #222831;
+  --background-color: #fff;
+  --primary-color: #DEE2E7;
 }

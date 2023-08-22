@@ -3,8 +3,8 @@
 }
 
 .card {
-  background-color: rgb(34, 40, 49);
-  color: #dddddd;
+  background-color: var(--primary-color);
+  color: var(--font-color);
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -42,8 +42,8 @@
 }
 
 .accentBacground {
-  color: #222831;
-  background-color: #98BBF6;
+  color: var(--accent-font-color);
+  background-color: var(--accent-background-color);
 }
 
 .paragraph {
