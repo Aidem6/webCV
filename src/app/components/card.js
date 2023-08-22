@@ -9,8 +9,8 @@ export const Card = ( props ) => {
   const [ref, inView] = useInView();
 
   const boxVariant = {
-    visible: { opacity: 1, y: 0,  transition: { duration: 0.5 } },
-    hidden: { opacity: 0, y: props.scrollDir === "up" ? 100 : -100 }
+    visible: { scale: 1, y: 0,  transition: { duration: 0.5 } },
+    hidden: { scale: 0.9, y: props.scrollDir === "up" ? 100 : -100 }
   };
 
   useEffect(() => {
