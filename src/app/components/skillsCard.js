@@ -13,7 +13,7 @@ import {
 
 export function SkillsCard() {
   return (
-    <div className={styles.card}>
+    <div>
       <h2 className={styles.secondaryTitle}>
         Skills
       </h2>

@@ -3,7 +3,7 @@ import { InfoChunk } from './infoChunk.js';
 
 export function EducationCard() {
   return (
-    <div className={styles.card}>
+    <div>
       <h2 className={styles.secondaryTitle}>
         Education
       </h2>

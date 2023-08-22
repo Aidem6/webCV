@@ -11,7 +11,7 @@ import {
 
 export function ContactCard() {
   return (
-    <div className={styles.card}>
+    <div>
       <h2 className={styles.secondaryTitle}>
         Contact
       </h2>

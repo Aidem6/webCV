@@ -5,7 +5,7 @@ import maturaLogo from '../assets/matura.png';
 
 export function OwnProjects() {
   return (
-    <div className={styles.card}>
+    <div>
       <h2 className={styles.secondaryTitle}>
         Own Projects
       </h2>
