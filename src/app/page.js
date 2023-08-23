@@ -14,7 +14,6 @@ import Image from 'next/image';
 import myFace from './assets/cvface.png';
 import Button from 'react-bootstrap/Button';
 import { ThemeChanger } from './components/themeChanger';
-import { useTheme } from 'next-themes'
 import { Card } from './components/card.js';
 import { useEffect, useState } from 'react';
 
