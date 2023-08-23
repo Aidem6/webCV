@@ -11,14 +11,14 @@ export const ThemeChanger = () => {
     return (
       <a onClick={() => setTheme('dark')}>
         {/* <FontAwesomeIcon icon={faMoon} style={{float: 'right', height: '32px', margin: '10px', fontWeight: 700}} /> */}
-        <MoonIcon style={{float: 'right', height: '32px', margin: '10px', fontWeight: 700}} />
+        <MoonIcon />
       </a>
     );
   } else {
     return (
       <a onClick={() => setTheme('light')}>
         {/* <FontAwesomeIcon icon={faSun} style={{float: 'right', height: '32px', margin: '10px', fontWeight: 700}} /> */}
-        <SunIcon style={{float: 'right', height: '32px', margin: '10px', fontWeight: 700}} />
+        <SunIcon />
       </a>
     );
   }
