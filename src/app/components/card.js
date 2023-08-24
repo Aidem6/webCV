@@ -8,7 +8,7 @@ export const Card = ( props ) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
-  const boxVariant = {
+  const cardVariant = {
     visible: { scale: 1, y: 0,  transition: { duration: 0.5 } },
     hidden: { scale: 0.9, y: props.scrollDir === "up" ? 100 : -100 }
   };
@@ -25,8 +25,8 @@ export const Card = ( props ) => {
     <motion.div
       className={ !props.button ? styles.card : 'p-0' }
       ref={ref}
-      variants={boxVariant}
-      initial="hidden"
+      variants={cardVariant}
+      initial="visible"
       animate={control}
     >
       {props.children}
