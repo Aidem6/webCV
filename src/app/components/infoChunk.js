@@ -3,7 +3,8 @@ import styles from '../page.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faGooglePlay
+  faGooglePlay,
+  faAppStoreIos
 } from '@fortawesome/free-brands-svg-icons';
 import Button from 'react-bootstrap/Button';
 
@@ -30,14 +31,24 @@ export function InfoChunk(props) {
       <p className={styles.paragraph}>
         { props.description }
       </p>
-      { props.googlePlayLink &&
-        <a target="_blank" href={props.googlePlayLink}>
-          <Button  variant="primary" className={styles.button}>
-            {'Show on Google Play Store '}
-            <FontAwesomeIcon icon={faGooglePlay} />
-          </Button>
-        </a>
-      }
+      <div style={{display: 'flex'}}>
+        { props.appStoreLink &&
+          <a target="_blank" href={props.appStoreLink}>
+            <Button  variant="primary" className={styles.button}>
+              <FontAwesomeIcon size='xl' icon={faAppStoreIos} />
+              {'App Store '}
+            </Button>
+          </a>
+        }
+        { props.googlePlayLink &&
+          <a target="_blank" href={props.googlePlayLink}>
+            <Button  variant="primary" className={styles.button}>
+              <FontAwesomeIcon size='xl' icon={faGooglePlay} />
+              {'Google Play Store '}
+            </Button>
+          </a>
+        }
+      </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import './globals.css'
 import { Raleway } from 'next/font/google'
-import '@fortawesome/fontawesome-svg-core/styles.css';
-import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
 import { Providers } from './providers'
 
 config.autoAddCss = false; /* eslint-disable import/first */

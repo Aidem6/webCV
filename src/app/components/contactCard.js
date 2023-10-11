@@ -30,7 +30,7 @@ export function ContactCard() {
         </li>
         <li>
           <FontAwesomeIcon icon={faLocationDot} />
-          <a target="_blank" href='https://goo.gl/maps/kkLq3YoeeTwED9av9' className={styles.contactLink}>Amsterdam (in September)</a>
+          <a target="_blank" href='https://goo.gl/maps/kkLq3YoeeTwED9av9' className={styles.contactLink}>Amsterdam</a>
         </li>
       </ul>
     </div>
