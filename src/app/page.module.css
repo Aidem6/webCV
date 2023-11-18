@@ -108,4 +108,6 @@
   padding: 12px 32px;
   text-align: center;
   margin: 12px;
+  display: flex;
+  gap: .8rem;
 }
