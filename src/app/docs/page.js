@@ -1,5 +1,4 @@
 'use client'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../page.module.css';
 import '../globals.css';
