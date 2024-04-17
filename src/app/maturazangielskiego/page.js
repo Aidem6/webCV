@@ -67,7 +67,7 @@ export default function Docs() {
           </Row>
         </Col>
         <Col xs={12} xl={6} className='text-center mt-3 mt-xl-0' style={{display: 'flex', justifyContent: 'center', height: '100vh'}}>
-          <video width="100%" preload="none" autoPlay muted>
+          <video width="100%" preload="none" autoPlay muted playsInline>
             <source src="/English Matura.webm" type="video/webm" />
             <source src="/English Matura.mp4" type="video/mp4" />
             Your browser does not support the video tag.
