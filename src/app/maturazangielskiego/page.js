@@ -43,11 +43,11 @@ export default function Docs() {
   }, [scrollDir]);
 
   return (
-    <Container className='w-100 overflow-hidden' style={{ backgroundColor: '#080808' }} >
+    <Container className='w-100 h-100 overflow-hidden' style={{ backgroundColor: '#080808' }} >
       <Row>
         <Col xs={12} xl={6}>
-          <Row className="w-100 h-100" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2rem'}}>
-            <h1 style={{color: '#bb86fc', fontWeight: 'bold', fontSize: '5rem'}}>Matura z angielskiego</h1>
+          <Row className="w-100 h-100 mt-3 mt-xl-0" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2rem'}}>
+            <h1 className="display-1" style={{color: '#bb86fc', fontWeight: 'bold'}}>Matura z angielskiego</h1>
             <p style={{fontSize: '1.4rem', lineHeight: '2.4rem', fontWeight: 500}}>W autobusie, na kanapie, gdziekolwiek chcesz - sprawdź się przed maturą za pomocą wygodnej aplikacji.</p>
 
             <div style={{display: 'flex'}}>
@@ -66,9 +66,10 @@ export default function Docs() {
             </div>
           </Row>
         </Col>
-        <Col xs={12} xl={6} className='text-center'>
-          <video height="auto" preload="none" autoPlay muted>
-            <source src="/English Matura.webm" type="video/mp4" />
+        <Col xs={12} xl={6} className='text-center mt-3 mt-xl-0' style={{display: 'flex', justifyContent: 'center', height: '100vh'}}>
+          <video width="100%" preload="none" autoPlay muted>
+            <source src="/English Matura.webm" type="video/webm" />
+            <source src="/English Matura.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Col>
