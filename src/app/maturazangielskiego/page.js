@@ -12,7 +12,7 @@ import {
 import Button from 'react-bootstrap/Button';
 
 export default function Matzang() {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
