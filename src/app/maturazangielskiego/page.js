@@ -10,18 +10,25 @@ import {
   faAppStoreIos
 } from '@fortawesome/free-brands-svg-icons';
 import Button from 'react-bootstrap/Button';
+import { useTheme } from 'next-themes'
+
 
 export default function Matzang() {
+  const { theme, setTheme } = useTheme()
   const [width, setWidth] = useState(0);
 
-  function handleWindowSizeChange() {
-      setWidth(window.innerWidth);
-  }
   useEffect(() => {
-      window.addEventListener('resize', handleWindowSizeChange);
+    setTheme('dark');
+    if (typeof window !== 'undefined') {
+      setWidth(window.innerWidth);
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
       return () => {
-          window.removeEventListener('resize', handleWindowSizeChange);
-      }
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
   
   const isMobile = width <= 768;
@@ -55,7 +62,7 @@ export default function Matzang() {
           </Row>
         </Col>
         <Col xs={12} xl={6} className='text-center mt-3 mt-xl-0' style={{display: 'flex', justifyContent: 'center', height: '100vh'}}>
-          <video width="100%" preload="none" autoPlay loop={isMobile} muted playsInline>
+          <video width="100%" style={{ objectFit: 'cover' }} preload="none" autoPlay loop={isMobile} muted playsInline>
             <source src="/English Matura.webm" type="video/webm" />
             <source src="/English Matura.mp4" type="video/mp4" />
             Your browser does not support the video tag.
