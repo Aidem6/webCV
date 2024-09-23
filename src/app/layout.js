@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { Providers } from './providers'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 config.autoAddCss = false; /* eslint-disable import/first */
 const raleway = Raleway({ subsets: ['latin'] })
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang='en' suppressHydrationWarning>
       <body className={raleway.className}>
         <Providers>{children}</Providers>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
